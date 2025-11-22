@@ -85,8 +85,9 @@ async def on_message_edit(before, after):
             # Check if this is a giveaway end message
             embed = after.embeds[0]
             if "winner" in embed.title.lower() or "won" in embed.description.lower():
-                # Check if user is mentioned as winner
-                if client.user.mention in embed.description or str(client.user.id) in embed.description:
+                # Check if user's name or ID is in the results
+                username = client.user.name
+                if username.lower() in embed.description.lower() or str(client.user.id) in embed.description or client.user.mention in embed.description:
                     giveaway_stats["won"] += 1
                     print(f"🎉 YOU WON! Total wins: {giveaway_stats['won']}")
 
