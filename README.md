@@ -1,3 +1,4 @@
 - Exp Auto enter bot
 - Its like a selfbot so u need ur token the src is there so it wont be stolen or anything , use github codespaces if u dont have vs code to run it (for codespaces u need a auto cliucker and stay on codespacespage else if vs code local just do whatever)
 - I wouldn't use cmds since they can get u limited js let the exp bot run and not like use cmcds ur good (auto enwter giveaways is default)
+- Oh yeah pip install self discord bot or smth forgot but dont use default discord bot do self discord bot package 
